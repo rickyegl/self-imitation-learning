@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+#os.chdir(r'D:\Users\Sky\Documents\Gym\self-imitation-learning-master')
+#print(os.getcwd())
 
 from baselines import logger
 from baselines.common.cmd_util import make_atari_env, atari_arg_parser
